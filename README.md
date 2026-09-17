@@ -29,13 +29,19 @@ npm run preview
 npm test
 ```
 
-## StackBlitz
+## StackBlitz / iPad
 
-Open this repo (not a nested folder):
+StackBlitz on Safari iPad is **beta**. Large npm installs often freeze on “Installing dependencies” because iPadOS limits memory for a web page. That is a StackBlitz + Safari limit, not a FORM bug.
 
-https://stackblitz.com/github/haizethomas-ops/App-sport-grock
+On iPad:
 
-If it hangs on “Installing dependencies”, refresh once. `jsdom` was removed from the default install because it often freezes WebContainers. The app only needs Vite + React.
+1. Prefer the compiled demo on GitHub Pages (no npm):  
+   https://haizethomas-ops.github.io/App-sport-grock/
+2. If you still want the editor, use a Mac/PC + Chrome. Chrome on iPad is still WebKit, so it hits the same limit.
+3. Disable content blockers for stackblitz.com, close other Safari tabs, then reopen:  
+   https://stackblitz.com/github/haizethomas-ops/App-sport-grock
+
+First Pages deploy: repo **Settings → Pages — Source = GitHub Actions**.
 
 ## Demo accounts
 
