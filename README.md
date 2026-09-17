@@ -31,7 +31,11 @@ npm test
 
 ## StackBlitz
 
-Unzip so `package.json` sits at the project root. Run `npm install` then `npm run dev`. Do not nest extra folders.
+Open this repo (not a nested folder):
+
+https://stackblitz.com/github/haizethomas-ops/App-sport-grock
+
+If it hangs on “Installing dependencies”, refresh once. `jsdom` was removed from the default install because it often freezes WebContainers. The app only needs Vite + React.
 
 ## Demo accounts
 
